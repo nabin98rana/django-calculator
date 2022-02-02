@@ -1,0 +1,44 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+<h1>Django Calculator</h1>
+<h1>Addition</h1>
+<form action="add" method="POST">
+  {% csrf_token %}
+
+  Enter First Number:<input type="text" name="num1" class="form-control"><br>
+  Enter Second Number:<input type="text" name="num2" class="form-control"><br>
+
+  <input type="submit" class="btn btn-primary mb-3">
+</form>
+
+<h1>Subtraction</h1>
+<form action="sub" method="POST">
+  {% csrf_token %}
+
+  Enter First Number:<input type="text" name="num1" class="form-control"><br>
+  Enter Second Number:<input type="text" name="num2" class="form-control"><br>
+
+  <input type="submit" class="btn btn-primary mb-3">
+</form>
+
+<h1>Multiplication</h1>
+<form action="multi" method="POST">
+  {% csrf_token %}
+
+  Enter First Number:<input type="text" name="num1" class="form-control"><br>
+  Enter Second Number:<input type="text" name="num2" class="form-control"><br>
+
+  <input type="submit" class="btn btn-primary mb-3">
+</form>
+
+<h1>Division</h1>
+<form action="div" method="POST">
+  {% csrf_token %}
+
+  Enter First Number:<input type="text" name="num1"  class="form-control"><br>
+  Enter Second Number:<input type="text" name="num2" class="form-control"><br>
+
+  <input type="submit" class="btn btn-primary mb-3">
+</form>
+{% endblock %}
