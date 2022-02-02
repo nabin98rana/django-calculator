@@ -10,20 +10,20 @@ Simple calculator using django framework
 2. source env/Scripts/activate
 
 #Install Django
-pip install Django
+3. pip install Django
 
 #Create project
-django-admin startproject project-name
+4. django-admin startproject project-name
 
 #Database changes
 +  python manage.py makemigrations
 + python manage.py migrate
 
 #Create app
-pyhton manage.py startapp app_name
+5. pyhton manage.py startapp app_name
 
 #create super user
-python manage.py createsuperuser
+6. python manage.py createsuperuser
 
 #Run server
-python manage.py runserver
+7. python manage.py runserver
